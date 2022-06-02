@@ -10,33 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="header-logo">
-            <a class="header-link" href="portfolio.html"><span class="header-link-logo">Web</span>Studio</a>
+    <header class="header">
+        <div class="header-container container">
+            <nav class="header-logo">
+                <a class="header-link" href="index.html"><span class="header-link-logo">Web</span>Studio</a>   
                 <ul class="header-top">
                     <li class="header-top-item">
                         <a class="header-top-link" href="index.html">Студия</a>
                     </li>
                     <li class="header-top-item">
-                        <a class="header-top-link" href="">Портфолио</a>
+                        <a class="header-top-link" href="#">Портфолио</a>
                     </li>
                     <li class="header-top-item">
                         <a class="header-top-link" href="">Контакты</a>
                     </li>
-                </ul>
-        </nav>
-        <ul class="header-bottom">
-            <li class="header-bottom-item">
-                <a class="header-bottom-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="header-bottom-item">
-                <a class="header-bottom-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+                </ul>                 
+            </nav>
+            <ul class="header-bottom">
+                <li class="header-bottom-item">
+                    <a class="header-bottom-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="header-bottom-item">
+                    <a class="header-bottom-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section>
-            <ul class="menu">
+        <section class="projects">
+            <ul class="menu container">
                 <li class="menu-item">
                     <button type="button">Все</button>   
                 </li>
@@ -53,7 +55,7 @@
                     <button type="button">Маркетинг</button>
                 </li>
             </ul>
-            <ul class="projects-menu">
+            <ul class="projects-menu container">
                 <li class="projects-menu-item">
                     <img src="./images/img-1.jpg" alt="Веб-сайт на екране ноутбука" width="370">
                     <h3>Технокряк</h3>
@@ -103,20 +105,22 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="footer-logo" href="portfolio.html"><span>Web</span>Studio</a>
-        <address>
-            <ul class="footer-menu-item">
-                <li class="footer-menu">
-                    <a class="footer-menu-adrs" href="">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer-menu">
-                    <a class="footer-menu-link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="footer-menu">
-                    <a class="footer-menu-link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="footer-container container">
+            <a class="footer-container-logo" href="index.html"><span>Web</span>Studio</a>
+            <address>
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-adrs" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a class="footer-menu-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

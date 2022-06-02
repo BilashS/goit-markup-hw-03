@@ -39,11 +39,17 @@ h2{
     color: #212121;
 }
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+}
+
 
 .header-container{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     /* align-items: center; */
+    
 }
 
 .header-logo{
@@ -54,7 +60,7 @@ h2{
 }
 
 .header-link{
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -63,7 +69,8 @@ h2{
     text-decoration: none;
     color: black;
 
-    padding: 24px 93px 25px 0;
+    padding: 24px 0 25px 0;
+    margin-right: 93px;
 
 }
 .header-link-logo{
@@ -84,7 +91,12 @@ h2{
 }
 
 .header-top-item{
-    padding: 32px 50px 32px 0;
+    padding: 32px 0 32px 0;
+    margin-right: 50px;
+}
+
+.header-top-item:last-child{
+    margin-right: 0;
 }
 
 .header-top-link{
@@ -106,12 +118,18 @@ h2{
     
     display: flex;
     align-items: center;
+    margin-left: auto;
     /* flex-direction: row; */
 
 }
 
 .header-bottom-item{
-    padding: 32px 50px 32px 0;
+    padding: 32px 0 32px 0;
+    margin-right: 50px;
+}
+
+.header-bottom-item:last-child{
+    margin-right: 0;
 }
 
 .header-bottom-link{
@@ -131,7 +149,8 @@ h2{
 
 .info-container{
     text-align: center;
-    padding: 200px 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .info h1{
@@ -143,8 +162,9 @@ h2{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-
+    /* text-align: center; */
     margin-bottom: 30px;
+    /* max-width: 696px; */
     
 }
 
@@ -153,7 +173,7 @@ h2{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: white;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
 }
 .info-butt span{
@@ -165,6 +185,10 @@ h2{
     color: #FFFFFF;
 }
 
+.business{
+    padding: 94px 0 94px 0;
+}
+
 .business-menu{
     list-style: none;
     display: flex;
@@ -172,7 +196,8 @@ h2{
 }
 
 .business-menu-item{
-    padding: 94px 30px 94px 0;
+    /* padding: 94px 30px 94px 0; */
+    margin-right: 30px;
 }
 
 .business-menu-item h3{
@@ -184,6 +209,7 @@ h2{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-bottom: 10px;
 }
 .business-menu-item p{
     font-family: 'Roboto';
@@ -228,6 +254,7 @@ h2{
     text-align: center;
     margin-top: 50px;
     background-color: #FFFFFF;
+    
 }
 
 .team-list h3{
@@ -259,8 +286,16 @@ h2{
 /* Footer */
 .footer{
     background: #2F303A;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
 }
-.footer-logo{
+
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container-logo{
     text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
@@ -270,12 +305,18 @@ h2{
     letter-spacing: 0.03em;
     color: white;
 }
-.footer-logo span{
+.footer-container-logo span{
     color: #2196F3;
 }
-.footer-menu-item{
+.footer-menu-list{
     list-style: none;
+    margin-top: 20px;
 }
+
+.footer-menu-item{
+    margin-top: 9px;          
+}
+
 .footer-menu-adrs{
     font-family: 'Roboto';
     font-style: normal;
@@ -290,6 +331,7 @@ h2{
 .footer-menu-adrs:focus{
     color: #2196F3;
 }
+
 .footer-menu-link{
     font-family: 'Roboto';
     font-style: normal;
@@ -306,11 +348,19 @@ h2{
 }
 /* Portfolio */
 
+.projects{
+    padding: 94px 0 94px 0;
+}
+
+
 .menu{
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 .menu-item{
     padding: 5px;
+    margin-bottom: 56px;
 }
 .menu-item button{
     background: #F5F4FA;
@@ -324,6 +374,8 @@ h2{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding: 6px 22px 6px 22px;
+    
 }
 
 .menu-item button:hover,
@@ -336,15 +388,23 @@ h2{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    
 }
 
 
 .projects-menu{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.projects-menu-item{
+    padding: 0 30px 30px 0;
+}    
+
 
 .projects-menu-item h3{
     font-family: 'Roboto';
