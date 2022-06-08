@@ -18,11 +18,16 @@ h1, h2, h3, h4, h5, h6, p, ul{
 }
 
 .container{
-    width: 1230px;
+    width: 1200px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
-
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 button:hover{
     cursor: pointer;
@@ -47,15 +52,13 @@ h2{
 
 .header-container{
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    
     
 }
 
 .header-logo{
     display: flex;
     align-items: center;
-    /* flex-direction: row; */
     
 }
 
@@ -77,21 +80,13 @@ h2{
     color: #2196F3;
 }
 .header-top{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     list-style: none;
-
     display: flex;
     align-items: center;
-    
 }
 
 .header-top-item{
-    padding: 32px 0 32px 0;
+    
     margin-right: 50px;
 }
 
@@ -102,29 +97,28 @@ h2{
 .header-top-link{
     text-decoration: none;
     color: #212121;
-}
-.header-top-link:hover,
-.header-top-link:focus{
-    color: #2196F3; 
-}
-.header-bottom{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 32px 0 32px 0;
+}
+.header-top-link:hover,
+.header-top-link:focus{
+    color: #2196F3; 
+}
+.header-bottom{
     list-style: none;
-    
     display: flex;
     align-items: center;
     margin-left: auto;
-    /* flex-direction: row; */
 
 }
 
 .header-bottom-item{
-    padding: 32px 0 32px 0;
+    
     margin-right: 50px;
 }
 
@@ -133,8 +127,15 @@ h2{
 }
 
 .header-bottom-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: #757575;
+    padding: 32px 0 32px 0;
 }
 .header-bottom-link:hover,
 .header-bottom-link:focus{
@@ -145,12 +146,14 @@ h2{
 
 .info{
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .info-container{
+    max-width: 696px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
 }
 
 .info h1{
@@ -162,9 +165,7 @@ h2{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* text-align: center; */
     margin-bottom: 30px;
-    /* max-width: 696px; */
     
 }
 
@@ -172,35 +173,35 @@ h2{
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: white;
+    border: #FFFFFF;
     min-width: 200px;
     height: 50px;
-}
-.info-butt span{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
 }
 
+
 .business{
-    padding: 94px 0 94px 0;
+    padding: 94px 0;
 }
 
 .business-menu{
     list-style: none;
     display: flex;
-    /* justify-content: space-between; */
-    gap: 60px;
+    gap: 30px;
     
 }
 
 .business-menu-item{
-    /* padding: 94px 30px 94px 0; */
-    /* margin-right: 30px; */
+    
 }
+
+
 
 .business-menu-item h3{
     font-family: 'Roboto';
@@ -224,25 +225,30 @@ h2{
 }
 
 
+.work{
+    padding-bottom: 94px;
+}
 
+.work-container h2{
+    margin-bottom: 50px;
+}
 
 .work-list{
     list-style: none;
     display: flex;
     gap: 30px;
-    margin-top: 50px;
-    padding-bottom: 94px;
+    
 }
 
 
 .team{
     background: #F5F4FA;
-}
-
-.team-container{
-    
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.team-container h2{
+    margin-bottom: 50px;
 }
 
 .team-list{
@@ -254,7 +260,6 @@ h2{
 
 .team-list-item{
     text-align: center;
-    margin-top: 50px;
     background-color: #FFFFFF;
     
 }
@@ -267,8 +272,8 @@ h2{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: #212121;
-
-    margin: 30px 0 10px 0;
+    padding-top: 30px;
+    margin-bottom: 10px;
 
 }
 .team-list p {
@@ -288,35 +293,40 @@ h2{
 /* Footer */
 .footer{
     background: #2F303A;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
 .footer-container{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 
 .footer-container-logo{
-    text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
 }
 .footer-container-logo span{
     color: #2196F3;
 }
 .footer-menu-list{
     list-style: none;
-    margin-top: 20px;
 }
 
 .footer-menu-item{
     margin-top: 9px;          
+}
+
+.footer-menu-item:first-child{
+    margin-top: 0;          
 }
 
 .footer-menu-adrs{
@@ -359,11 +369,18 @@ h2{
     list-style: none;
     display: flex;
     justify-content: center;
-}
-.projects-buttons-item{
-    padding: 5px;
     margin-bottom: 56px;
 }
+.projects-buttons-item{
+    margin-right: 5px;
+    
+}
+
+.projects-buttons-item:last-child{
+    margin-right: 0px;
+    
+}
+
 .projects-buttons-item button{
     background: #F5F4FA;
     border-radius: 4px;
@@ -416,6 +433,7 @@ h2{
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121; 
+    margin-bottom: 4px;
 }
 .projects-menu-item p{
     font-family: 'Roboto';
@@ -425,4 +443,11 @@ h2{
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+.projects-menu-info{
+    padding: 20px 24px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
 }
